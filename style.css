@@ -216,6 +216,10 @@ figure svg{
 
 
 @media screen and (max-width:700px){
+    body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
     .logo h1{
         font-size: 38px;
     }
