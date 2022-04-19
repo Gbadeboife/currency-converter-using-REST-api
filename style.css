@@ -223,7 +223,7 @@ figure svg{
     body{
     overflow-x: hidden;
     overflow-y: hidden;
-        height: 100vh;
+        height: inherit;
     width: 100%;
     }
     .logo h1{
