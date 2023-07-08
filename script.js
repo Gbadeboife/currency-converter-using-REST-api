@@ -5,10 +5,10 @@ var toCurText=document.querySelector('.second-currency');
 var button=document.querySelector('.btn');
 var message=document.querySelector('.msg');
 var input=document.getElementById('amount');
-const submit=document.querySelector('.submit');
 var currencyNameOne;
 var currencyNameTwo;
 const actualPage=document.querySelector('.actual-page');
+
 //screen load animations
 $(document).ready(function(){
     $('.actual-page').fadeIn(2000);    
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 //end screen load animations
 
-
+//Function to update label text for input tags
 function updateCurrencyName(e){
     const currencyNameOne=fromCurrency.options[fromCurrency.selectedIndex].getAttribute('data-name');
     const currencyNameTwo=toCurrency.options[toCurrency.selectedIndex].getAttribute('data-name');
@@ -30,7 +30,7 @@ function updateCurrencyName(e){
 };
 
 
-
+//Function to format result of converted value
 function formatToCurrency(number,currencyCode){
     var options={
         style:'currency',
@@ -42,13 +42,13 @@ function formatToCurrency(number,currencyCode){
     return currencyFormatText;
 };   
 
+//Function to interact with the API and convert values
 async function getExRate(){
-    const amount=input.value;
+    const amount=input.value;   
     const fromText=fromCurrency.value;
     const toText=toCurrency.value;
-    const apiKey='bf90848daca0626832804d3254a8d4ce';
-    const url =
-    "http://api.exchangeratesapi.io/v1/latest?access_key=" + apiKey;
+    const apiKey=process.env.API_KEY;
+    const url ="http://api.exchangeratesapi.io/v1/latest?access_key=" + apiKey;
     const api=await fetch(url);
     const data=await api.json();
     const rates=data.rates;
@@ -61,8 +61,11 @@ async function getExRate(){
 
 };
 
+console.log(process.env.API_KEY)
 
+updateCurrencyName()
 
+//Adding event to the convert button once clicked
 button.addEventListener('click',getExRate);
 
 

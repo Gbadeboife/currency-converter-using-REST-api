@@ -17,10 +17,10 @@ body{
     color: black;
 }
 .logo{
-    padding: 30px 0 40px 0;
-    box-sizing: border-box;
+    padding: 15px 0 0;
     width: 60%;
     margin: auto;
+    height: 150px;
 }   
 .logo h1{
     font-size: 50px;
@@ -29,8 +29,12 @@ body{
     position: relative;
     bottom: 20px;
     text-align: center;
+    margin-bottom: 30px;
     color: rgb(33, 27, 27);
     text-transform: capitalize;
+}
+.logo h1 i{
+    transform: translateY(+10%);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -94,6 +98,8 @@ label{
     font-weight: 700;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .btn i{
     color: white;
@@ -177,7 +183,7 @@ figure svg{
         font-size: 43px;
     }
     .logo{
-        padding: 20px 0 30px 0;
+        padding: 20px 0 0;
     }
     .sign-in form{
         padding-top: 50px;
