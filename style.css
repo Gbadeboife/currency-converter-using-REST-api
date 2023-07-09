@@ -7,8 +7,6 @@ body{
     font-family: 'kanit',sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
     height: 100vh;
     width: 100%;
 }
@@ -60,49 +58,36 @@ label{
     font-weight: 500;
     margin-bottom: 15px;
 }
-#amount{
-    height: 40px;
-    padding-left: 20px;
-    width: 70%;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    margin-bottom: 40px;    
-}
 
-
-
-.inputs select{
+input,select{
     width: 70%;
     height: 40px;
     border-radius: 20px;
     padding-left: 10px;
     border: none;
+    margin-bottom: 10px;
     outline: none;
     border-top-left-radius: 0;
-    margin-bottom: 10px;
 }
-.from,.to{
+input,.from,.to{
     margin-bottom: 40px;
 }
+
 .btn{
     padding: 15px 30px;
     font-size: 22px;
     left: 17%;
     position: relative;
-    top: 100px;
-    background-color: #671d1d;
+    top: 50px;
+    background-color: #b24e68;
     color: white;
     font-weight: 700;
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    transition: 0.5s;
 }
 .btn i{
-    color: white;
+    color: white;`
 }
 .btn:hover{
     background-color: #9d3b3b;
@@ -116,11 +101,16 @@ label{
 .blur-div{
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right,white,#ed788d);
+    background-image: linear-gradient(to right,white,#c4a1da);
     position: absolute;
-    filter: blur(10px);
     z-index: -1;
+    overflow-x: hidden;
+    overflow-y: hidden;
     top: 0;
+}
+.blur-div div{
+    filter: blur(10px);
+
 }
 
 .one{
@@ -138,22 +128,23 @@ label{
     height: 300px;
     width: 300px;
     background-color: #a2e7e2;
-    opacity: 0.9;
+    opacity: 0.6;
     border-radius: 50%;
     position: absolute;
-    right: -150px;
-    top: 60%;
+    right: -15%;
+    z-index: 2;
+    bottom: 5%;
 }
 
 .three{
     height: 150px;
     width: 150px;
-    background-color:#e94747;
-    opacity: 0.9;
+    background-color:#eb5c98;
+    opacity: 0.6;
     border-radius: 50%;
     position: absolute;
-    top: 85%;
-    left: 83%;
+    bottom: -10%;
+    right: -2%;
 }
 figure{
     width: 50%;
@@ -185,18 +176,15 @@ figure svg{
     .logo{
         padding: 20px 0 0;
     }
-    .sign-in form{
-        padding-top: 50px;
+
+    input,select{
+        height: 35px;
     }
-    .sign-in h1{
-        font-size: 35px;
+    .input,.from,.to{
+        margin-bottom: 35px;
     }
-    .inputs input{
-        height: 40px;
-    }
-    .sign-in{
-        width: 60%;
-    }
+
+
     .one{
         width: 200px;
         height: 200px;
@@ -214,81 +202,136 @@ figure svg{
     }
     .actual-page form{
         padding-top: 0;
+        width: 55%;
     }
-    .from,.to{
-        margin-bottom: 20px;
+    figure{
+        width: 43%;
+        position: relative;
+    }
+    figure svg{
+        position: absolute;
+        top: 0;
+        width: 90%;
     }
     label{
         font-size: 26px;
     }
+    .btn{
+        padding: 12px 20px;
+        font-size: 20px;
+    }
 }
 
-
-
-@media screen and (max-width:700px){
-    body{
-    overflow-x: hidden;
-    overflow-y: hidden;
-        height: inherit;
-    width: 100%;
+@media screen and (max-width:1000px){
+    label{
+        font-size: 21px;
+    }
+    input,select{
+        height: 30px;
+    }
+    input,.from,.to{
+        margin-bottom: 30px;
+    }
+    .btn{
+        padding: 10px 17px;
+        font-size: 17px;
+    }
+    .logo{
+        padding: 0;
     }
     .logo h1{
-        font-size: 38px;
+        font-size: 30px;
+    }
+    .inputs p{
+        font-size: 14px;
+    }
+    .logo p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .logo h1{
+        font-size: 30px;
+        margin-bottom: 40px;
     }
     .logo{
         width: 100%;
+        margin-bottom: 0;
     }
 
     .actual-page form{
-        margin: auto;
-        width: 90%;
         display: block;
+        width: 95%;
         padding-top: 30px;
         padding-left: 0;
     }
+    .actual-page{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
     figure{
-        display: none;
-    }
-    .inputs select{
-        height: 33px;
-        width: 80%;
-        margin: auto;
-        display: block;
-    }
-    #amount{
-        height: 30px;
-        width: 80%;
-        font-size: 16px;
+        padding-top: 10px;
+        position: static;
+        width: 50%;
         margin: auto;
         margin-bottom: 20px;
+    }
+    figure svg{
+        width: 100%;
+        position: static;
+    }
+    input,select{
+        height: 30px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 5px;
         display: block;
     }
+    input,.from,.to{
+        margin-bottom: 25px;
+    }
+
     label{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-bottom: 10px;
     }
+    .actual-page form{
+        margin: auto;
+    }
     .inputs p{
-        font-size: 15px;  
         text-align: center;
     }
-    .from,.to{
-        margin-bottom: 20px;
-    }
-
     .logo{
         padding: 15px 0 20px 0;
     }
     .btn{
-        padding: 10px 20px;
-        font-size: 18px;
-        left: 10%;
+        padding: 10px 30px;
+        font-size: 16px;
+        left: 0;
+        margin: auto;
         display: block;
     }
-
-
+    .one{
+        height: 150px;
+        top: -5%;
+        left: -20%;
+        width: 150px;
+    }
+    .two{
+        height: 150px;
+        width: 150px;
+    }
+    .three{
+        width: 100px;
+        height: 100px;
+        left: -10%;
+        bottom: -7%;
+    }
 
 }
 
