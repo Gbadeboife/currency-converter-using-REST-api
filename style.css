@@ -31,6 +31,7 @@ body{
     color: rgb(33, 27, 27);
     text-transform: capitalize;
 }
+
 .logo h1 i{
     transform: translateY(+10%);
 }
@@ -94,7 +95,7 @@ input,.from,.to{
 }
 .inputs p{
     font-size: 17px;
-    color: red;
+    color:#b24e68;
     font-weight: 500;
 }
 
@@ -162,7 +163,7 @@ figure svg{
 
 .msg{
     font-size: 23px;
-    color: red;
+    color:#b24e68;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
@@ -245,7 +246,7 @@ figure svg{
     .inputs p{
         font-size: 14px;
     }
-    .logo p{
+    .msg{
         font-size: 17px;
     }
 }
