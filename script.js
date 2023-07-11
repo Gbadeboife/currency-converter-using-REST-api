@@ -56,7 +56,7 @@ async function getExRate(){
     const fromText=fromCurrency.value;
     const toText=toCurrency.value;
     const apiKey='bf90848daca0626832804d3254a8d4ce';
-    const url ="//api.exchangeratesapi.io/latest?access_key=" + apiKey;
+    const url ="http://api.exchangeratesapi.io/latest?access_key=" + apiKey;
     const api=await fetch(url);
     const data=await api.json();
     const rates=data.rates;
