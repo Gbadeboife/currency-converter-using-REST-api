@@ -245,7 +245,6 @@ figure svg{
     .logo h1{
         font-size: 30px;
     }
-
     .msg{
         font-size: 17px;
     }
@@ -254,13 +253,14 @@ figure svg{
 @media screen and (max-width:700px){
     .logo h1{
         font-size: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .logo{
         width: 100%;
         margin-bottom: 0;
+        padding: 10px 0 10px 0;
+        height: 80px;
     }
-
     .actual-page form{
         display: block;
         width: 95%;
@@ -306,9 +306,7 @@ figure svg{
         margin: auto;
     }
 
-    .logo{
-        padding: 10px 0 10px 0;
-    }
+
     .btn{
         padding: 10px 30px;
         font-size: 16px;
