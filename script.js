@@ -55,11 +55,11 @@ async function getExRate(){
     const amount=input.value;   
     const fromText=fromCurrency.value;
     const toText=toCurrency.value;
-    const apiKey='bf90848daca0626832804d3254a8d4ce';
-    const url ="//api.exchangeratesapi.io/latest?access_key=" + apiKey;
+    const apiKey='72f99500f6844804f605d47c';
+    const url =`https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
     const api=await fetch(url);
     const data=await api.json();
-    const rates=data.rates;
+    const rates=data.conversion_rates;
     const exchangeRate=rates[toText]/rates[fromText];
     const result= exchangeRate*amount;
     const fromNumber=formatToCurrency(amount,fromText);
