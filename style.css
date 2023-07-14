@@ -44,6 +44,7 @@ input::-webkit-inner-spin-button {
 
 .actual-page{
     display: none;
+    margin-bottom: 10px;
 }
 
 .actual-page form{
@@ -305,7 +306,9 @@ figure svg{
     .actual-page form{
         margin: auto;
     }
-
+    .inputs{
+        margin-bottom: 20px;
+    }
 
     .btn{
         padding: 10px 30px;
