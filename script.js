@@ -1,19 +1,14 @@
 var fromCurrency=document.querySelector('#first-input');
 var toCurrency=document.querySelector('#second-input');
-var fromCurText=document.querySelector('.first-currency');
-var toCurText=document.querySelector('.second-currency');
 var button=document.querySelector('.btn');
 var message=document.querySelector('.msg');
 var input=document.getElementById('amount');
 const submit=document.querySelector('.submit');
-var currencyNameOne;
-var currencyNameTwo;
 var outputText
 const actualPage=document.querySelector('.actual-page');
 
 
 
-updateCurrencyName()
 
 
 
@@ -28,14 +23,6 @@ $(document).ready(function(){
 );
 
 //end screen load animations
-
-//Function to update label text for input tags
-function updateCurrencyName(e){
-    const currencyNameOne=fromCurrency.options[fromCurrency.selectedIndex].getAttribute('data-name');
-    const currencyNameTwo=toCurrency.options[toCurrency.selectedIndex].getAttribute('data-name');
-    fromCurText.textContent=currencyNameOne;
-    toCurText.textContent=currencyNameTwo;
-};
 
 
 //Function to format result of converted value

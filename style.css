@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'kanit',sans-serif;
 }
 body{
-    font-family: 'kanit',sans-serif;
     overflow-x: hidden;
     width: 100%;
 }
@@ -67,6 +67,9 @@ input,select{
     margin-bottom: 10px;
     outline: none;
     border-top-left-radius: 0;
+    font-weight: 500;
+    font-size: 17px;
+
 }
 input,.from,.to{
     margin-bottom: 40px;
@@ -90,11 +93,6 @@ input,.from,.to{
 }
 .btn:hover{
     background-color: #9d3b3b;
-}
-.inputs p{
-    font-size: 17px;
-    color:#b24e68;
-    font-weight: 500;
 }
 
 .blur-div{
@@ -178,6 +176,7 @@ figure svg{
 
     input,select{
         height: 35px;
+        font-size: 15px;
     }
     .input,.from,.to{
         margin-bottom: 35px;
@@ -227,6 +226,7 @@ figure svg{
     }
     input,select{
         height: 30px;
+        font-size: 14px;
     }
     input,.from,.to{
         margin-bottom: 30px;
@@ -241,9 +241,7 @@ figure svg{
     .logo h1{
         font-size: 30px;
     }
-    .inputs p{
-        font-size: 14px;
-    }
+
     .msg{
         font-size: 17px;
     }
@@ -285,6 +283,7 @@ figure svg{
         height: 30px;
         width: 95%;
         margin: auto;
+        font-size: 12px;
         margin-bottom: 5px;
         display: block;
     }
@@ -302,9 +301,7 @@ figure svg{
     .actual-page form{
         margin: auto;
     }
-    .inputs p{
-        text-align: center;
-    }
+
     .logo{
         padding: 10px 0 10px 0;
     }
