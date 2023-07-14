@@ -7,7 +7,9 @@
 body{
     overflow-x: hidden;
     width: 100%;
-    height: auto;
+    position: relative;
+    min-height: 100vh;
+    border: 1px solid black;
 }
 
 .fa{
@@ -98,13 +100,14 @@ input,.from,.to{
 
 .blur-div{
     width: 100%;
+    border: 3px solid black;
     height: 100%;
-    background-image: linear-gradient(to right,white,#c4a1da);
+    top: 0;
     position: absolute;
+    background-image: linear-gradient(to right,white,#c4a1da);
     z-index: -1;
     overflow-x: hidden;
     overflow-y: hidden;
-    top: 0;
 }
 .blur-div div{
     filter: blur(10px);
