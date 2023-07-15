@@ -251,7 +251,7 @@ figure svg{
 
 @media screen and (max-width:700px){
     body{
-        min-height: unset;
+        overflow-y: hidden;
     }
     .logo h1{
         font-size: 30px;
