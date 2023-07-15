@@ -250,6 +250,9 @@ figure svg{
 }
 
 @media screen and (max-width:700px){
+    body{
+        min-height: unset;
+    }
     .logo h1{
         font-size: 30px;
         margin-bottom: 10px;
@@ -268,6 +271,7 @@ figure svg{
     }
     .actual-page{
         height: auto;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: column-reverse;
     }
