@@ -300,6 +300,7 @@ figure svg{
         font-size: 20px;
         font-weight: 400;
         width: 90%;
+        bottom: 15px;
         margin: auto;
         margin-bottom: 10px;
     }
@@ -307,13 +308,14 @@ figure svg{
         margin: auto;
     }
     .inputs{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .btn{
         padding: 10px 30px;
         font-size: 16px;
         left: 0;
+        top: 30px;
         margin: auto;
         display: block;
     }

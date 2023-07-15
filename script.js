@@ -15,10 +15,10 @@ const actualPage=document.querySelector('.actual-page');
 //screen load animations
 $(document).ready(function(){
     $('.actual-page').fadeIn(1500);    
-    $('.btn').animate({top:'-=50px'},800);
+    $('.btn').animate({top:'0'},800);
     $('h1').animate({bottom:'0'},800);
-    $('figure').animate({top:'-=100px'},1200);
-    $('label').animate({bottom:'-=30px'},1000);
+    $('figure').animate({top:'0'},1200);
+    $('label').animate({bottom:'0'},1000);
 }
 );
 
