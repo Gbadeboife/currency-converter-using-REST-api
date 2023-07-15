@@ -60,6 +60,11 @@ label{
     font-weight: 500;
     margin-bottom: 15px;
 }
+select{
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 
 input,select{
     width: 70%;
@@ -72,7 +77,6 @@ input,select{
     border-top-left-radius: 0;
     font-weight: 500;
     font-size: 17px;
-
 }
 input,.from,.to{
     margin-bottom: 40px;
